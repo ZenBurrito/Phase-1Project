@@ -8,7 +8,16 @@ A one-paragraph overview of the project, including the business problem, data, m
 
 ## Business Problem
 
+Microsoft has expressed interest in going into the original video creation by creating a new movie studio. 
+The Microsoft Studio team has tasked us to explore which types of films are dominating the market, 
+and translate them into actionable intel that can help the head of Microsofts new studio make
+an informed decision on which films they would like to start to produce.
+
 Summary of the business problem you are trying to solve, and the data questions that you plan to answer in order to solve them.
+
+# THIS IS A TEST
+
+## TEST
 
 ***
 Questions to consider:
