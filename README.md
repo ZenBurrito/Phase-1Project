@@ -49,7 +49,7 @@ How confident are you that your results would generalize beyond the data you hav
 Present your key results. For Phase 1, this will be findings from your descriptive analysis.
 
 ## Visual 1
-![graph1](./images/viz1.png)
+![graph1](./Images/boxplot_roi_genre.png)
 
 ## Recommendation 2
   The second recommendation that we gave was how the seasons affect consumer habits when it comes to viewership.
