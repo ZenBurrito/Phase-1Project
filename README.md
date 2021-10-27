@@ -4,10 +4,10 @@
 
 ## Overview
 
-  Using Python libraries such as; pandas, matplotlib, NumPy, and seaborn we conducted an EDA on the film industry.
-We used our findings to create recommendations for the Microsoft Studio team, including the relationship of genre
-and return on investment (ROI), how the season changing affects consumer habits, and which directors have had the
-most overall success in the market.
+  Using Python libraries such as; pandas, matplotlib, NumPy, and seaborn we conducted an EDA on the film industry
+over the past ten years. We used our findings to create recommendations for the Microsoft Studio team, 
+including the relationship of genre and return on investment (ROI), how the season changing affects consumer habits, 
+and which directors have had the most overall success in the market.
 
 ## Business Problem
 
@@ -20,7 +20,7 @@ an informed decision on which films they would like to start to produce.
 
   The data for this project has been scraped from IMDb.com and The-Numbers.com, both of which contain
 raw data that pertains to the film industry as a whole. They include data points such as; worldwide gross,
-director name, genres, runtimes, etc. The main variable we want to compare the datapoints to is
+director name, genres, runtimes, etc. The main variable we want to compare the data points to is
 ROI, we want to know how efficient each data point is for a new original content creation studio.
 
 ## Methods
@@ -29,56 +29,59 @@ ROI, we want to know how efficient each data point is for a new original content
 from the datasets provided and did basic cleaning operations. We dropped null values because we deemed that
 not only was the data only a fraction, but the rest of the data in the columns were irrelevant. We then made
 sure there were no obscene outliers or duplicate data. After we had cleaned and prepared data frames we used
-the matplotlib and seaborn libraries to visualize the data. After a few graphs we prepared three seperate
+the matplotlib and seaborn libraries to visualize the data. After a few graphs, we prepared three separate
 recommendations. We found this approach appropriate since the overall business question was how to carve out
 a place in the film market, so finding the types of films, who should be in charge of them, and when to release
-the films was all relevant.
+the films were all relevant.
 
 ## Recommendation 1
 
   The first recommendation that we made to Microsoft is to pay close attention to the relationship between
-genre and ROI. There is a clear correlation between a few genres and a very positive ROI, the biggest suprise
+genre and ROI. There is a clear correlation between a few genres and a very positive ROI, the biggest surprise
 was finding out how profitable horror movies are. The average budget on a horror film is considerably lower than
-a cgi filled action movie like The Avengers. Despite the low budget horror films still succeed in the market over
+a CGI-filled action movie like The Avengers. Despite the low budget horror films still succeed in the market over
 the past ten years. Even if more movie titles were added and we had more data to parse through, the statement of
 "horror films cost less to make, and return a very positive ROI" would still be true, making our data not only relevant
 to just our datasets, but the overall market as well.
-
-How do you interpret the results?
-How confident are you that your results would generalize beyond the data you have?
-Present your key results. For Phase 1, this will be findings from your descriptive analysis.
 
 ## Visual 1
 ![graph1](./Images/boxplot_roi_genre.png)
 
 ## Recommendation 2
-  The second recommendation that we gave was how the seasons affect consumer habits when it comes to viewership.
+  The second recommendation is to time the release date of important films.
 We took the release month of movies and compared them to the average ROI of movies released in those months. 
-took actual month name, sorted by order or months, plotted month name vs ROI, July, Jan highest roi,
+Once the data was separated into months and visualized, when to release became glaringly obvious. Two
+months stick out so much they almost look like outliers, July and January account for a large portion of the data.
+That being said, production should finish up and be ready to release by one of those months to ensure the highest
+return on the production budget.
+
 ## Visual 2
-![graph1](./images/viz1.png)
+![graph1](./Images/Seasonality.png)
 
 ## Recommendation 3
-recommendation
+Just like the top 1% in net worth, there is a large disproportion in the amount of money the top directors
+produce compared to the rest. We visualized the total gross that the directors' movie made, which has pointed
+to some of the most popular names in the industry. We recommend that they pick a director who is tried and true
+with his production value to ensure the highest chance of having a successful film.
 
 ## Visual 3
-![graph1](./images/viz1.png)
+![graph1](./Images/directors.png)
 
 
 ## Conclusions
 
-Provide your conclusions about the work you've done, including any limitations or next steps.
-
-***
-Questions to consider:
-* What would you recommend the business do as a result of this work?
-* What are some reasons why your analysis might not fully solve the business problem?
-* What else could you do in the future to improve this project?
-***
+Microsoft is not a small company, fortunately for them they have almost limitless resources when it comes
+to building a successful film studio. They have the privilege of waiting for the best times to release their new films,
+data that proves which genres are most likely to give them a big return on their money, and which director is going
+to help their film not only get off the ground, but soar in terms of profitability. The data, as useful as it was, is still limited
+when you account for the entirety of the film industry. It's possible that there are slight variations in the data when you account for
+the fact that there are hundreds of thousands of more films out there, and those variations could be key indicators of other recommendations; 
+however, with the data we were provided however, our analysis helps paint a clearpicture for the studio team, and the best ways 
+they can proceed moving foward to give themselves the best statistical chance for success.
 
 ## For More Information
 
-Please review our full analysis in [our Jupyter Notebook](./dsc-phase1-project-template.ipynb) or our [presentation](./DS_Project_Presentation.pdf).
+Please review our full analysis in [our Jupyter Notebook](./Movie-Studio-Project.ipynb) or our [presentation](./Film-Industry-EDA-PresentationF.pdf).
 
 For any additional questions, please contact **Colin Pelzer - pelzercolin@gmail.com, Daniel Burdeno -email, Emiko Naomasa -email, Piotr Czolpik -email**
 
@@ -88,7 +91,7 @@ Describe the structure of your repository and its contents, for example:
 
 ```
 ├── README.md                           <- The top-level README for reviewers of this project
-├── dsc-phase1-project-template.ipynb   <- Narrative documentation of analysis in Jupyter notebook
+├── Movie-Studio-Project.ipynb          <- Narrative documentation of analysis in Jupyter notebook
 ├── Film_Industry_EDA_Presentation.pdf  <- PDF version of project presentation
 ├── data                                <- Both sourced externally and generated from code
 └── images                              <- Both sourced externally and generated from code
