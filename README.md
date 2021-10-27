@@ -4,10 +4,10 @@
 
 ## Overview
 
-  Using Python libraries such as; pandas, matplotlib, NumPy, and seaborn we conducted an EDA on the film industry.
-We used our findings to create recommendations for the Microsoft Studio team, including the relationship of genre
-and return on investment (ROI), how the season changing affects consumer habits, and which directors have had the
-most overall success in the market.
+  Using Python libraries such as; pandas, matplotlib, NumPy, and seaborn we conducted an EDA on the film industry
+over the past ten years. We used our findings to create recommendations for the Microsoft Studio team, 
+including the relationship of genre and return on investment (ROI), how the season changing affects consumer habits, 
+and which directors have had the most overall success in the market.
 
 ## Business Problem
 
