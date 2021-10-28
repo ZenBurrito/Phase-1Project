@@ -53,7 +53,7 @@ This suggests that horror movies are a good genre for small budgets yielding big
 ![graph1](./Images/boxplot_roi_genre.png)
 
 ## Figure 1B
-![graph1](./Images/Bar_budget_gross_genre.png)
+![graph1](./Images/Bar_budget_gross_genre1.png)
 
 ## Recommendation 2: Release in July and January 
 
