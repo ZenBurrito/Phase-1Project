@@ -24,7 +24,7 @@ In this analysis, we especially focused on the following business questions rela
 
 ## Data
 
-To answer our business questions, we used film data from the box office between 2010 and 2019 from [IMDb.com](https://www.imdb.com/) and [The Numbers.com](https://www.the-numbers.com/). 
+To answer our business questions, we used film data from the box office between 2010 and 2021 from [IMDb.com](https://www.imdb.com/) and [The Numbers.com](https://www.the-numbers.com/). 
 Detailed information on films, including directors’ names, genres, and release dates, are collected from IMDb.com; 
 data on gross revenue and production budgets are from The-Numbers.com. 
 After cleaning, our master dataset included 1609 films around the world.  
@@ -35,9 +35,8 @@ After cleaning, our master dataset included 1609 films around the world.
 We condacted descriptive data analysis using a rate of return on investment (ROI) as the primary profitability measures in this analysis. 
 ROI simply reflects how much return was made per dollar of investment.  
 
-**Return on Investment = (Worldwide Gross – Production Budgets) / Production Budgets** 
+**Worldwide Return on Investment = (Worldwide Gross – Production Budgets) / Production Budgets** 
 
-Additionally, to assess directors who make the most profitable movies, we used the sum of the net profit of movies according to director. 
 
 ## Recommendation 1: Horror movies are good place to invest for a higher ROI. 
 
@@ -55,7 +54,7 @@ This suggests that horror movies are a good genre for small budgets yielding big
 ## Figure 1B
 ![graph1](./Images/Bar_budget_gross_genre1.png)
 
-## Recommendation 2: Release in July and January 
+## Recommendation 2: Release in July, October. and January 
 
 **The second recommendation is to time the release date for important films.** 
 Figure 2 compares the average ROI of movies by release months. 
@@ -66,11 +65,10 @@ This seasonal trend suggests that production should finish up and be ready to re
 ## Figure 2
 ![graph1](./Images/Seasonality.png)
 
-## Recommendation 3: Opt for famous directors when possible
+## Recommendation 3: Opt for top directors when possible
 
-**For a successful film, offering a famous director will be one of the options.** 
-Figure 3 demonstrates the top 20 directors ranked by the total gross each directors' movie made between 2010 and 2019. 
-The figure shows some of the most popular names in the industry. 
+**For a successful film, offering the top directors will be one of the options.** 
+Figure 3 demonstrates the top 20 directors in the horror genre ranked by the total gross each directors' movie made between 2010 and 2019. 
 
 ## Figure 3
 ![graph1](./Images/directors.png)
@@ -78,9 +76,9 @@ The figure shows some of the most popular names in the industry.
 
 ## Conclusions
 
-Our analysis on ROI suggests that for a higher return, (1) make a horror film, (2) seek a famous director, (3) and release in July or January. 
+Our analysis on ROI suggests that for a higher return, (1) make a horror film, (2) seek the top directors, (3) and release in July, October, or January, 
 We find that horror movies are often made on a low budget, yet the gross is relatively high. 
-A list of top 20 directors shows some well-known names, which also guarantee higher profit. 
+A list of top 20 directors in the horror genre shows the names, which guarantee higher profit. 
 Finally, release data should be adjusted for people’s vacation seasons. 
 
 One caveat of our ROI analysis is that a high return on investment is not always equal to much cash in hand. 
