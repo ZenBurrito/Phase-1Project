@@ -50,7 +50,7 @@ And compared to other genres with similar budget ranges, horror films produce re
 This suggests that horror movies are a good genre for small budgets yielding big returns. 
 
 ## Figure 1A
-![graph1](./Images/boxplot_roi_genre.png)
+![graph1](./Images/ROIBARGenre.png)
 
 ## Figure 1B
 ![graph1](./Images/Bar_budget_gross_genre1.png)
