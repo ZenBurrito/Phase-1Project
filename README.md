@@ -5,83 +5,95 @@
 
 ## Overview
 
-  Using Python libraries such as; pandas, matplotlib, NumPy, and seaborn we conducted an EDA on the film industry
-over the past ten years. We used our findings to create recommendations for the Microsoft Studio team, 
-including the relationship of genre and return on investment (ROI), how the season changing affects consumer habits, 
-and which directors have had the most overall success in the market.
-
-In this project, we analyzed box office films released in the past ten years, 2010-2019, and found a pattern in high profit movies. Our findings were transformed to actionable recommendations for the Microsoft Studio team to support the launch of a new original movie studio. Our analysis revealed which  movie genres provide a higher return, how the season affects tickets sales, and which directors have had the most overall success in the market. 
+In this project, we analyzed box office films released in the past ten years, 2010-2019, and found a pattern in high profit movies. 
+Our findings were transformed to actionable recommendations for the Microsoft Studio team to support the launch of a new original movie studio. 
+Our analysis revealed which  movie genres provide a higher return, how the season affects tickets sales, 
+and which directors have had the most overall success in the market. 
 
 
 ## Business Problem
 
-  Microsoft has expressed interest in going into the original video creation by creating a new movie studio. 
-The Microsoft Studio team has tasked us to explore which types of films are dominating the market, 
-and translate them into actionable intel that can help the head of Microsofts new studio make
-an informed decision on which films they would like to start to produce.
+Microsoft has expressed its interest in entering the film production industry and have decided to create a new movie studio to produce original movies. 
+To support the head of Microsoft studio’s decisions on what types of films to create, 
+we explored what types of films at the box office can produce a high rate of return and translate into actionable intel. 
+In this analysis, we especially focused on the following business questions relating to genres, directors, and the seasonality of the movie industry.
+
+1.	Which genre of movies will promise a high rate of return on investment?   
+2.	Are there any seasonal changes in box tickets sales? If so, which months of the year are the best times to release movies? 
+3.	Among active movie directors, who will be the best option to produce a movie with high global grossing? 
 
 ## Data
 
-  The data for this project has been scraped from IMDb.com and The-Numbers.com, both of which contain
-raw data that pertains to the film industry as a whole. They include data points such as; worldwide gross,
-director name, genres, runtimes, etc. The main variable we want to compare the data points to is
-ROI, we want to know how efficient each data point is for a new original content creation studio.
+To answer our business questions, we used film data from the box office between 2010 and 2019 from [IMDb.com](https://www.imdb.com/) and [The Numbers.com](https://www.the-numbers.com/). 
+Detailed information on films, including directors’ names, genres, and release dates, are collected from IMDb.com; 
+data on gross revenue and production budgets are from The-Numbers.com. 
+After cleaning, our master dataset included 1609 films around the world.  
+
 
 ## Methods
 
-  The main library used for cleaning and organizing the data was pandas. We created several data frames
-from the datasets provided and did basic cleaning operations. We dropped null values because we deemed that
-not only was the data only a fraction, but the rest of the data in the columns were irrelevant. We then made
-sure there were no obscene outliers or duplicate data. After we had cleaned and prepared data frames we used
-the matplotlib and seaborn libraries to visualize the data. After a few graphs, we prepared three separate
-recommendations. We found this approach appropriate since the overall business question was how to carve out
-a place in the film market, so finding the types of films, who should be in charge of them, and when to release
-the films were all relevant.
+We condacted descriptive data analysis using a rate of return on investment (ROI) as the primary profitability measures in this analysis. 
+ROI simply reflects how much return was made per dollar of investment.  
 
-## Recommendation 1
+**Return on Investment = (Worldwide Gross – Production Budgets) / Production Budgets** 
 
-  The first recommendation that we made to Microsoft is to pay close attention to the relationship between
-genre and ROI. There is a clear correlation between a few genres and a very positive ROI, the biggest surprise
-was finding out how profitable horror movies are. The average budget on a horror film is considerably lower than
-a CGI-filled action movie like The Avengers. Despite the low budget horror films still succeed in the market over
-the past ten years. Even if more movie titles were added and we had more data to parse through, the statement of
-"horror films cost less to make, and return a very positive ROI" would still be true, making our data not only relevant
-to just our datasets, but the overall market as well.
+Additionally, to assess directors who make the most profitable movies, we used the sum of the net profit of movies according to director.
 
-## Visual 1
+The process of data cleaning:  We dropped null data after confirming that the share of the missing data is small.  
+We also dropped no obscene outliers and duplicate data. 
+We used the matplotlib and seaborn libraries to visualize the data. 
+
+## Recommendation 1: Horror movies are good place to invest for a higher ROI. 
+
+**Horror movies outperform other genres in terms of ROI.** 
+Figure 1A displays the ROI by genre. 
+The median ROI for horror movies is significantly higher than that for other genres, meaning most horror movies have higher ROIs. 
+To see why the rate of return for horror movies’ is so high, we also looked at production budget by genre (Figure 1B). 
+The average budget on a horror film is considerably lower than other major genres. 
+And compared to other genres with similar budget ranges, horror films produce relatively higher global grossing. 
+This suggests that horror movies are a good genre for small budgets yielding big returns. 
+
+## Figure 1A
 ![graph1](./Images/boxplot_roi_genre.png)
 
-## Recommendation 2
-  The second recommendation is to time the release date of important films.
-We took the release month of movies and compared them to the average ROI of movies released in those months. 
-Once the data was separated into months and visualized, when to release became glaringly obvious. Two
-months stick out so much they almost look like outliers, July and January account for a large portion of the data.
-That being said, production should finish up and be ready to release by one of those months to ensure the highest
-return on the production budget.
+## Figure 1B
+![graph1](./Images/bar_budget_gross_genre.png)
 
-## Visual 2
+## Recommendation 2: Release in July and January 
+
+**The second recommendation is to time the release date for important films.** 
+Figure 2 compares the average ROI of movies by release months. 
+Movies released in July and January had more than twice the ROI than in other months. 
+This corresponds to the summer vacation and winter vacation seasons, when people have more time to go to movie theaters. 
+This seasonal trend suggests that production should finish up and be ready to release by one of those months to ensure the highest return on the production budget.
+
+## Figure 2
 ![graph1](./Images/Seasonality.png)
 
-## Recommendation 3
-Just like the top 1% in net worth, there is a large disproportion in the amount of money the top directors
-produce compared to the rest. We visualized the total gross that the directors' movie made, which has pointed
-to some of the most popular names in the industry. We recommend that they pick a director who is tried and true
-with his production value to ensure the highest chance of having a successful film.
+## Recommendation 3: Opt for famous directors when possible
 
-## Visual 3
+**For a successful film, offering a famous director will be one of the options.** 
+Figure 3 demonstrates the top 20 directors ranked by the total gross each directors' movie made between 2010 and 2019. 
+The figure shows some of the most popular names in the industry. 
+
+## Figure 3
 ![graph1](./Images/directors.png)
 
 
 ## Conclusions
 
-Microsoft is not a small company, fortunately for them they have almost limitless resources when it comes
-to building a successful film studio. They have the privilege of waiting for the best times to release their new films,
-data that proves which genres are most likely to give them a big return on their money, and which director is going
-to help their film not only get off the ground, but soar in terms of profitability. The data, as useful as it was, is still limited
-when you account for the entirety of the film industry. It's possible that there are slight variations in the data when you account for
-the fact that there are hundreds of thousands of more films out there, and those variations could be key indicators of other recommendations; 
-however, with the data we were provided however, our analysis helps paint a clearpicture for the studio team, and the best ways 
-they can proceed moving foward to give themselves the best statistical chance for success.
+Out analysis on ROI suggests that for a higher return, (1) make a horror film, (2) seek a famous director, (3) and release in July or January. 
+We find that horror movies are often made on a low budget, yet the gross is relatively high. 
+A list of top 20 directors shows some well-known names, which also guarantee higher profit. 
+Finally, release data should be adjusted for people’s vacation seasons. 
+
+One caveat of our ROI analysis is that a high return on investment is not always equal to much cash in hand. 
+For the size of the profit, movies with large production budgets often hit the recode high grossing. 
+Microsoft is not a small corporation with limited production budgets, and their interest is more in having a larger net profit. 
+Thus, for the next step, we will include the size of net profit as our second indicator. 
+Additionally, revenue from streaming original movies in their own contents is important income from making original movies. 
+So, for the future analysis, we will expand our analysis in that direction. 
+
 
 ## For More Information
 
