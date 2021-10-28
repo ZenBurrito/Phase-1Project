@@ -1,7 +1,7 @@
 # Recommendations for Microsofts's New Original Studio 
 ## - Analysis of the most profitable movies
 
-**Authors**: Colin Pelzer, Emiko Naomasa, Daniel Burdeno, Piotr Czolpik
+**Authors**: Colin Pelzer, Daniel Burdeno, Emiko Naomasa, Piotr Czolpik
 
 ## Overview
 
