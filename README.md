@@ -37,11 +37,7 @@ ROI simply reflects how much return was made per dollar of investment.
 
 **Return on Investment = (Worldwide Gross – Production Budgets) / Production Budgets** 
 
-Additionally, to assess directors who make the most profitable movies, we used the sum of the net profit of movies according to director.
-
-The process of data cleaning:  We dropped null data after confirming that the share of the missing data is small.  
-We also dropped no obscene outliers and duplicate data. 
-We used the matplotlib and seaborn libraries to visualize the data. 
+Additionally, to assess directors who make the most profitable movies, we used the sum of the net profit of movies according to director. 
 
 ## Recommendation 1: Horror movies are good place to invest for a higher ROI. 
 
