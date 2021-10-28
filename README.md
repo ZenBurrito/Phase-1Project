@@ -82,7 +82,7 @@ The figure shows some of the most popular names in the industry.
 
 ## Conclusions
 
-Out analysis on ROI suggests that for a higher return, (1) make a horror film, (2) seek a famous director, (3) and release in July or January. 
+Our analysis on ROI suggests that for a higher return, (1) make a horror film, (2) seek a famous director, (3) and release in July or January. 
 We find that horror movies are often made on a low budget, yet the gross is relatively high. 
 A list of top 20 directors shows some well-known names, which also guarantee higher profit. 
 Finally, release data should be adjusted for people’s vacation seasons. 
