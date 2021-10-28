@@ -1,4 +1,5 @@
-# Film Industry EDA
+# Recommendations for Microsofts's New Original Studio 
+## - Analysis of the most profitable movies
 
 **Authors**: Colin Pelzer, Emiko Naomasa, Daniel Burdeno, Piotr Czolpik
 
@@ -8,6 +9,9 @@
 over the past ten years. We used our findings to create recommendations for the Microsoft Studio team, 
 including the relationship of genre and return on investment (ROI), how the season changing affects consumer habits, 
 and which directors have had the most overall success in the market.
+
+In this project, we analyzed box office films released in the past ten years, 2010-2019, and found a pattern in high profit movies. Our findings were transformed to actionable recommendations for the Microsoft Studio team to support the launch of a new original movie studio. Our analysis revealed which  movie genres provide a higher return, how the season affects tickets sales, and which directors have had the most overall success in the market. 
+
 
 ## Business Problem
 
