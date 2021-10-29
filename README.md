@@ -79,7 +79,14 @@ To have the highest potential ROI for your film, we recommend hiring one of thes
 
 ## Conclusions
 
-**Our analysis on ROI suggests that for a higher return, (1) make a horror/mystery film, (2) release in January, July, or October, and (3) seek the top directors in our list.** 
+**Our analysis on ROI suggests that for a higher return:**
+
+**(1) make a horror/mystery film.**
+
+**(2) release in January, July, or October.**
+
+**(3) seek the top directors in our list.** 
+
 We find that horror and mystery movies are often made on a low budget, yet the gross is relatively high. 
 The release date should be adjusted for three months identified.
 Finally, a list of top 20 directors in the horror genre shows the names with the highest return over the last 10 years. 
