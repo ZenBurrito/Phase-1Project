@@ -5,7 +5,7 @@
 
 ## Overview
 
-In this project, we analyzed box office films released in the past ten years, 2010-2019, and found a pattern in high profit movies. 
+In this project, we analyzed box office films released in the past ten years, 2010-2021, and found a pattern in high profit movies. 
 Our findings were transformed to actionable recommendations for the Microsoft Studio team to support the launch of a new original movie studio. 
 Our analysis revealed which  movie genres provide a higher return, how the season affects tickets sales, 
 and which directors have had the most overall success in the market. 
@@ -27,26 +27,25 @@ In this analysis, we especially focused on the following business questions rela
 To answer our business questions, we used film data from the box office between 2010 and 2021 from [IMDb.com](https://www.imdb.com/) and [The Numbers.com](https://www.the-numbers.com/). 
 Detailed information on films, including directors’ names, genres, and release dates, are collected from IMDb.com; 
 data on gross revenue and production budgets are from The-Numbers.com. 
-After cleaning, our master dataset included 1609 films around the world.  
+After cleaning, our master dataset included 1610 films around the world.  
 
 
 ## Methods
 
 We condacted descriptive data analysis using a rate of return on investment (ROI) as the primary profitability measures in this analysis. 
-ROI simply reflects how much return was made per dollar of investment.  
 
 **Worldwide Return on Investment = (Worldwide Gross – Production Budgets) / Production Budgets** 
 
 
-## Recommendation 1: Horror movies are good place to invest for a higher ROI. 
+## Recommendation 1: Horror and mystery movies are good place to invest for a higher ROI. 
 
-**Horror movies outperform other genres in terms of ROI.** 
+**Horror and mystery movies outperform other genres in terms of ROI.** 
 Figure 1A displays the ROI by genre. 
-The median ROI for horror movies is significantly higher than that for other genres, meaning most horror movies have higher ROIs. 
+The mean ROI for horror/mystery movies is significantly higher than that for other genres. 
 To see why the rate of return for horror movies’ is so high, we also looked at production budget by genre (Figure 1B). 
-The average budget on a horror film is considerably lower than other major genres. 
-And compared to other genres with similar budget ranges, horror films produce relatively higher global grossing. 
-This suggests that horror movies are a good genre for small budgets yielding big returns. 
+The average budget on a horror/mystery film is lower than other major genres. 
+And compared to other genres with similar budget ranges, horror/mystery films produce relatively higher global grossing. 
+This suggests that horror/mystery movies are a good genre for small budgets yielding big returns. 
 
 ## Figure 1A
 ![graph1](./Images/ROIBARGenre.png)
@@ -54,34 +53,34 @@ This suggests that horror movies are a good genre for small budgets yielding big
 ## Figure 1B
 ![graph1](./Images/Bar_budget_gross_genre1.png)
 
-## Recommendation 2: Release in July, October. and January 
+## Recommendation 2: Release in January, July, or October 
 
 **The second recommendation is to time the release date for important films.** 
 Figure 2 compares the average ROI of movies by release months. 
-Movies released in July and January had more than twice the ROI than in other months. 
-This corresponds to the summer vacation and winter vacation seasons, when people have more time to go to movie theaters. 
+Movies released in January, July and October had significantly higher ROI than in other months. 
+This corresponds to the summer vacation and fall/winter vacation seasons, when people have more time to go to movie theaters. 
 This seasonal trend suggests that production should finish up and be ready to release by one of those months to ensure the highest return on the production budget.
 
 ## Figure 2
-![graph1](./Images/Seasonality.png)
+![graph1](./Images/seasonality_final.png)
 
-## Recommendation 3: Opt for top directors when possible
+## Recommendation 3: Opt for top 20 directors when possible
 
-**For a successful film, offering the top directors will be one of the options.** 
-Figure 3 demonstrates the top 20 directors in the horror genre ranked by the total gross each directors' movie made between 2010 and 2019. 
+**For a successful film, offering the top 20 directors will be one of the options.** 
+Figure 3 demonstrates the top 20 directors in the horror genre ranked by average ROI each directors' movie made between 2010 and 2021. 
 
 ## Figure 3
-![graph1](./Images/directors.png)
+![graph1](./Images/directors_final.png) 
 
 
 ## Conclusions
 
-Our analysis on ROI suggests that for a higher return, (1) make a horror film, (2) seek the top directors, (3) and release in July, October, or January, 
-We find that horror movies are often made on a low budget, yet the gross is relatively high. 
+**Our analysis on ROI suggests that for a higher return, (1) make a horror/mystery film, (2) release in January, July, or October, and (3) seek the top directors in our list.** 
+We find that horror and mystery movies are often made on a low budget, yet the gross is relatively high. 
 A list of top 20 directors in the horror genre shows the names, which guarantee higher profit. 
 Finally, release data should be adjusted for people’s vacation seasons. 
 
-One caveat of our ROI analysis is that a high return on investment is not always equal to much cash in hand. 
+One caveat of our ROI analysis is that a high return on investment is not always equal to how much cash in hand. 
 For the size of the profit, movies with large production budgets often hit the recode high grossing. 
 Microsoft is not a small corporation with limited production budgets, and their interest is more in having a larger net profit. 
 Thus, for the next step, we will include the size of net profit as our second indicator. 
