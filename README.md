@@ -37,7 +37,7 @@ We condacted descriptive data analysis using a rate of return on investment (ROI
 **Worldwide Return on Investment = (Worldwide Gross – Production Budgets) / Production Budgets** 
 
 
-## Recommendation 1: Horror movies and mystery are good place to invest for a higher ROI. 
+## Recommendation 1: Horror and mystery movies are good place to invest for a higher ROI. 
 
 **Horror and mystery movies outperform other genres in terms of ROI.** 
 Figure 1A displays the ROI by genre. 
