@@ -62,7 +62,7 @@ This corresponds to the summer vacation and fall/winter vacation seasons, when p
 This seasonal trend suggests that production should finish up and be ready to release by one of those months to ensure the highest return on the production budget.
 
 ## Figure 2
-![graph1](./Images/Seasonality.png)
+![graph1](./Images/seasonality_final.png)
 
 ## Recommendation 3: Opt for top 20 directors when possible
 
@@ -70,7 +70,7 @@ This seasonal trend suggests that production should finish up and be ready to re
 Figure 3 demonstrates the top 20 directors in the horror genre ranked by average ROI each directors' movie made between 2010 and 2021. 
 
 ## Figure 3
-![graph1](./Images/directors_final.png)
+![graph1](./Images/directors_final.png) 
 
 
 ## Conclusions
