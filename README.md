@@ -5,7 +5,7 @@
 
 ## Overview
 
-In this project, we analyzed box office films released in the past ten years, 2010-2019, and found a pattern in high profit movies. 
+In this project, we analyzed box office films released in the past ten years, 2010-2021, and found a pattern in high profit movies. 
 Our findings were transformed to actionable recommendations for the Microsoft Studio team to support the launch of a new original movie studio. 
 Our analysis revealed which  movie genres provide a higher return, how the season affects tickets sales, 
 and which directors have had the most overall success in the market. 
@@ -33,7 +33,6 @@ After cleaning, our master dataset included 1610 films around the world.
 ## Methods
 
 We condacted descriptive data analysis using a rate of return on investment (ROI) as the primary profitability measures in this analysis. 
-ROI simply reflects how much return was made per dollar of investment.  
 
 **Worldwide Return on Investment = (Worldwide Gross – Production Budgets) / Production Budgets** 
 
@@ -71,7 +70,7 @@ This seasonal trend suggests that production should finish up and be ready to re
 Figure 3 demonstrates the top 20 directors in the horror genre ranked by average ROI each directors' movie made between 2010 and 2021. 
 
 ## Figure 3
-![graph1](./Images/directors.png)
+![graph1](./Images/directors_final.png)
 
 
 ## Conclusions
